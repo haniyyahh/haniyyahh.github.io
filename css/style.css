@@ -135,11 +135,28 @@ header .user .post{
 
 
 #projects{
+    /* display: flex;
+    justify-content: center;
+    flex-flow: column;
+    height:100%;
+
+
+    align-items: center;
+
+    padding: 0 15rem;
+    padding-top: 3rem; */
+    /* justify-content: top;
+    flex-flow: column;
+    padding: 0 15rem;
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    width: 100vw; */
     display: flex;
     justify-content: center;
     flex-flow: column;
-    padding: 0 10rem; 
-    padding-top: 3rem;  
+    padding: 0 15rem;
+    padding-top: 3rem; 
     /* display: none; */
 }
 
@@ -150,6 +167,11 @@ header .user .post{
 #projects p{
     font-size: 1rem;
     color: #fff;
+}
+#projects ul{
+  font-size: 1rem;
+  color: #fff;
+  padding-left: 5rem;
 }
 
 #projects .buttons-container{
@@ -181,7 +203,7 @@ header .user .post{
 
 
 #skills{
-    display: flew;
+    display: flex;
     justify-content: center;
     flex-flow: column;
     padding: 0 15rem;
@@ -204,12 +226,21 @@ header .user .post{
     justify-content: center;
     flex-flow: column;
     padding: 0 8rem;
+    margin: 0 auto;
+    
     /* padding-top: 3rem;    */
 }
 
 #career h1{
     font-size: 1.5rem;
     color: #fff;
+    text-align: center;
+}
+
+#career h2{
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
 }
 
 #career p{
