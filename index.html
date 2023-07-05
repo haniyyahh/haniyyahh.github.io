@@ -16,8 +16,9 @@
             <div class="user">
                 <img src="images/profile-pic.jpg" alt="">
                 <h3 class="name"> Haniyyah Hamid</h3>
-                <p class="post">Software Engineer</p>
-                <p class="fields"> Machine Learning  •  Game Development </p>
+                <p class="post">Software Developer</p>
+                <p class="fields"> Machine Learning  • NLP • Game Development </p>
+                <a href="files\Haniyyah-Hamid-Resume.pdf" target="_blank" class="resume-link">RESUME</a>
 
             </div>
     
@@ -29,7 +30,10 @@
             <p>
               I'm Haniyyah.
               <br>
-              I am interested in exploring the fields of machine learning and game development.
+              I am interested in exploring the fields of machine learning (more specifically NLP), 
+              computer graphics, and game development.
+              <br> <br>
+
             </p>
             <div class="buttons-container">
                 <button class="btn" onclick="toggleSection('projects')">PROJECTS </button>
@@ -41,47 +45,64 @@
         </section>
 
 
+        
         <div id="projects" class="toggle-section" style="display: none">
-            <h1 class="heading"> <span>PROJECTS</span></h1>
-            <p>
-              My current projects include:
-              <ul>
-                <li>
-                  a 3D game in Unity, 'Cosmic Prey', in which I am working
-                  in a team of developers to create.
-                </li>
-                <li>
-                  a music recommendation app using the Spotify API that matches two users and suggests
-                  songs both users would like.
-                </li>
-              </ul>
-
-            </p>
-            <div class="buttons-container">
-                <a href="https://github.com/haniyyahh/ML-Portfolio">
-                    <div class="circular-button">
-                      <img class="circular-image" src="images/ml-icon.png" alt="Circular Image Button">
-                    </div>
-                  </a>         
-                  <a href="https://haniyyah.itch.io/comet-epacse">
-                    <div class="circular-button">
-                      <img class="circular-image" src="images/comet-epacse-prj.png" alt="Circular Image Button">
-                    </div>
-                  </a>    
-                  <a href="https://github.com/johnegnatis/DP-Audit-Tool">
-                    <div class="circular-button">
-                      <img class="circular-image" src="images/dp-prj-logo.png" alt="Circular Image Button">
-                    </div>
-                  </a>
-                  <!-- </a>   WILL BE PROBABLY THE COMMENCEMENT DAY PROJECT
-                  <a href="https://github.com">
-                    <div class="circular-button">
-                      <img class="circular-image" src="images/github-icon.png" alt="Circular Image Button">
-                    </div>
-                  </a>    -->
+          <div class="projects-grid">
+            <div class="project-box">
+              <h2 class="project-title" ><a href="https://github.com/haniyyahh/ML-Portfolio">Machine Learning Portfolio</a></h2>
+              <img class="project-image" src="images/ml-icon.png" alt="Project 1">
+              <p class="project-description">A portfolio of various machine learning models
+                used to explore and train several different datasets and analyze them.
+              </p>
             </div>
-
+            <div class="project-box">
+              <h2 class="project-title"><a href="https://haniyyah.itch.io/comet-epacse">Comet Epacse Runner Game</a></h2>
+              <img class="project-image" src="images/comet-epacse-prj.png" alt="Project 2">
+              <p class="project-description">My first large scale video game I designed and 
+                developed in a small team. Scripted object movement using C# in Unity, 
+                designed and implemented the entire games' terrain, 
+                created 3D object models, 
+                and in charge of the UI and scene transitions of the game.
+              </p>
+            </div>
+            <div class="project-box">
+              <h2 class="project-title"><a href="https://github.com/johnegnatis/DP-Audit-Tool" >Degree Plan and Audit Tool</a></h2>
+              <img class="project-image" src="images/dp-prj-logo.png" alt="Project 3">
+              <p class="project-description">A web application where I served as a major 
+                contributor to the back-end and database of the tool. I designed and implemented
+                the way the tool reads in student transcripts, created our application's built-in database
+                using JSON, and played a major part in how the application updates its database using
+                transcript information and user input.
+              </p>
+            </div>
+            <div class="project-box">
+              <h2 class="project-title"><a href="" >Lovify</a></h2>
+              <img class="project-image" src="images.jpg" alt="Project 3">
+              <p class="project-description">
+                A web application using machine learning models such as K Nearest Neighbors
+                 and cosine similarity to determine the similarity between two user's Spotify 
+                 music tastes and match them so they can become friends. I served as a full-stack 
+                 developer, working on both the machine learning models used to match the users 
+                 as well as the front-end UI of Lovify. The project was created primarily Python, with 
+                 HTML and CSS templates coded to be used with flask.
+              </p>
+            </div>
+            <div class="project-box">
+              <h2 class="project-title"><a href="" >Commencement Day Simulator</a></h2>
+              <img class="project-image" src="images.jpg" alt="Project 3">
+              <p class="project-description">
+                My second video game developed in Unity using C#. The game is a first 
+                person shooter that follows a student to the commencement stage to retrieve their 
+                degree but is prevented from doing so until they defeat Temoc. The game takes 
+                inspiration from the FPS game Ultrakill. I served as the Team Lead, managing tasks
+                amongst the team. I created and designed the game environment while also implementing
+                some of the scripting.
+              </p>
+            </div>
+            <!-- Add more project boxes here -->
+          </div>
         </div>
+
 
         <div id="skills" class="toggle-section" style="display: none">
             <hr>
@@ -90,7 +111,7 @@
             <section class="skills-list">
                 <ul class="skill-list">
                   <!-- use top 3? skills, mention im familiar witih teh lower scored ones -->
-                  <p>PROGRAMMING LANGUAGES:<br></p>
+                  <p>PROGRAMMING LANGUAGES<br></p>
                   <li>
                     <div class="skill-name">Java</div>
                     <div class="skill-bar">
@@ -156,7 +177,7 @@
                   </li>
                   <!-- <p><br>FRONT-END:<br></p> -->
                   
-                  <p><br>TECHNOLOGIES/TOOLS/ENGINES:<br></p>
+                  <p><br>TECHNOLOGIES/TOOLS/ENGINES<br></p>
                   <li>
                     <div class="skill-name">Adobe After Effects</div>
                     <div class="skill-bar">
@@ -192,7 +213,7 @@
                     </div>
                     <div class="skill-percentage">40%</div>
                   </li>
-                  <p><br>SPOKEN LANGUAGES:<br></p>
+                  <p><br>SPOKEN LANGUAGES<br></p>
                   <li>
                     <div class="skill-name">English</div>
                     <div class="skill-bar">
@@ -208,6 +229,7 @@
                     <div class="skill-percentage">85%</div>
                   </li>
                 </ul>
+                <br><br>
               </section>
               
 
@@ -220,25 +242,42 @@
             <hr>
             <h2>University of Texas at Dallas </h2>
             <h3>2019-2023</h3>
-            <p class="desc"> I received my B.S. in Computer Science w/ Magna Cum Laude honors. </p>
-            <p><i>Relevant Coursework: </i></p>
-            <p class="coursework">  
-                <ul>
-                  <li>Intro to Machine Learning</li>
-                  <li>Computer Graphics</li>
-                  <li>Operating Systems</li>
-                  <li>Database Systems</li>
-                  <li>Computer Architecture</li>
-                  <li>Intro to Videogame Programming</li>
-                </ul>
-              </p>
+            <p class="desc"> 
+              I received my B.S. in Computer Science w/ Magna Cum Laude honors.
+              <br> 
+              Dean's List for Fall 2019
+              <!-- <br><br> -->
+              <p><i> <b>Relevant Coursework: </b></i></p>
+              <!-- <p class="coursework">   -->
+                  <ul>
+                    <li>Intro to Machine Learning</li>
+                    <li>Computer Graphics</li>
+                    <li>Operating Systems</li>
+                    <li>Database Systems</li>
+                    <li>Computer Architecture</li>
+                    <li>Intro to Video Game Programming</li>
+                    <li>UNIX/LINUX Programming</li>
+                  </ul>
+                <!-- </p> -->
+            </p>
+
             <hr>
             <h1 class="heading"> <span>CAREER</span></h1>
             <hr>
             <h2> Law Office of Domingo Garcia</h2>
             <h3>Legal Assistant • 2019-2023</h3>
+            <!-- <br> <br> -->
             <p>
-
+              Worked in several different departments of the firm, spanning from 
+              reductions to accounting to claims to intake to customer care. 
+              <br><br>
+              Gained 
+              valuable insight on how all these departments work together to service 
+              clients' cases regarding their personal injuries and motor vehicle accidents. 
+              <br><br>
+              I also worked closely with the general office manager to audit over three 
+              thousand client cases within the firm's legal database for all attorneys 
+              and case managers in the Dallas, Fort Worth, Tyler, and Houston offices.
             </p>
 
         </div>

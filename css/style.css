@@ -4,8 +4,13 @@
 
 :root{
     --yellow:#becec1;
+    /* --text_color: #e85a4f; */
     --text_color: #000000;
-    --skills-bar-color: #60725c;
+    /* --skills-bar-color: #60725c; e98074*/
+    --skills-bar-color: #8e8d8a;
+    
+
+
 }
 
 *{
@@ -39,7 +44,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background:#e4e4e4;
+    /* background:#e4e4e4; */
+    background:#eae7dc;
     overflow-x: hidden;
     /* padding: 35rem; */
 }
@@ -54,7 +60,8 @@ body{
 
 .btn{
     padding: .7rem 3rem;
-    background: #333;
+    /* background: #333; */
+    background: #8e8d8a;
     color: #fff;
     cursor: pointer;
     margin-top: 1rem;
@@ -73,6 +80,8 @@ body{
 
 .btn:hover{
     background:var(--yellow);
+    background: rgb(217, 217, 217);
+
 }
 
 header{
@@ -81,7 +90,9 @@ header{
     z-index: 1000;
     height:100%;
     width: 100vw;
-    background:#c7c7c7;
+    /* background:#d8c3a5; */
+    background: #8e8d8a;
+    /* c7c7c7 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,29 +107,40 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--skills-bar-color);
+    /* border:.7rem solid var(--skills-bar-color); */
+    /* border:.7rem solid #8e8d8a; */
 }
 
 header .user .name{
     font-size: 3.5rem;
-    color: var(--text_color)
+    /* color: var(--text_color) */
+    color: black;
+
 }
 header .user .fields{
   font-size: 1.75rem;
-  color: var(--text_color)
+  /* color: var(--text_color) */
+  color: black;
 }
 header .user .post{
     font-size: 2.25rem;
-    color: var(--text_color);
+    /* color: var(--text_color); */
+    color: black;
 }
 
+.resume-link{
+  font-size: 15px;
+  color: white;
+  text-decoration: underline;
+}
 .home{
     justify-content: top;
     flex-flow: column;
-    padding: 0 15rem;
+    padding: 0 15vw;
     padding-top: 3rem;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .home h3{
@@ -185,6 +207,40 @@ header .user .post{
     height: 100%;
     object-fit: cover;
 }
+/* ///////////////////////////// */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 5rem;
+  grid-gap: 1rem;
+}
+
+.project-box {
+  border: 5px solid #000000;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-image {
+  width: 25%;
+  /* height: 25% */
+  /* max-height: 200px; */
+  object-fit: cover;
+}
+
+.project-description {
+  font-size: 1rem;
+}
+
+
+/* ////////////////////// */
+
 
 #skills{
     display: flex;
@@ -206,7 +262,7 @@ header .user .post{
 
 
 #career{
-    display: flew;
+    display: flex;
     justify-content: center;
     flex-flow: column;
     padding: 0 8vw;
@@ -235,7 +291,11 @@ header .user .post{
     font-size: 1.5rem;
     color: var(--text_color);
     /* text-align: center; */
-    padding: 0 15vw;
+    /* padding: 0 10vw; */
+    /* align-content: center; */
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #career .coursework{
@@ -249,17 +309,24 @@ header .user .post{
   font-size: 1.5rem;
   color: var(--text_color);
   /* text-align: center; */
-  padding: 0 15vw;
+  /* padding: 0 10vw; */
 }
 
 #career ul{
   font-size: 1.5rem;
   color: var(--text_color);
-  padding: 0 15vw;
+  /* padding: 0 15vw; */
+  text-align: center;
+  list-style-position: inside;
 }
 
 .skills {
-    width: 80%;
+    /* width: 80%;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 8vw;
     margin: 0 auto;
   }
   
@@ -267,6 +334,10 @@ header .user .post{
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+
+  .skill-list p{
+    text-align: center;
   }
   
   .skill-list li {
@@ -277,6 +348,7 @@ header .user .post{
     margin-bottom: 0.5rem;
     color: var(--text_color);
     font-size: 1.5rem;
+    /* align */
   }
   
   .skill-bar {
